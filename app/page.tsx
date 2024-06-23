@@ -1,113 +1,63 @@
-import Image from "next/image";
+import SelectMenu from "./SelectMenu";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main className="flex min-h-screen flex-col p-24">
+      <SelectMenu />
+      <h1>
+        The Evolution of JavaScript: From Browser Scripting to Full-Stack
+        Dominance
+      </h1>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <p>
+        JavaScript, often hailed as the "language of the web," has undergone a
+        remarkable journey since its inception in the mid-1990s. Initially
+        designed as a lightweight scripting language for enhancing static web
+        pages, JavaScript has evolved into a versatile, full-stack programming
+        language powering both client and server-side applications. Let's delve
+        into the captivating history of JavaScript, tracing its roots and
+        exploring how it has grown from a humble browser scripting tool into a
+        ubiquitous force driving modern web development.
+      </p>
+      <h2>In the Beginning: Birth of JavaScript (1995-2000)</h2>
+      <p>
+        In 1995, Brendan Eich, a Netscape Communications Corporation engineer,
+        conceived JavaScript to add dynamic behavior to static HTML pages. The
+        language's birth was swift, and it found its place in Netscape Navigator
+        2.0. Despite its name causing confusion due to its similarity to Java,
+        JavaScript rapidly gained popularity, thanks to its ability to enable
+        interactive elements on websites. As the web matured, developers sought
+        more sophisticated tools, leading to the formation of the European
+        Computer Manufacturers Association (ECMA) to standardize JavaScript,
+        giving rise to ECMAScript. This standardization marked a crucial step
+        toward the language's widespread adoption and compatibility across
+        various browsers.
+      </p>
+      <h2>The Rise of AJAX and Web 2.0 (2000-2010)</h2>
+      <p>
+        With the dawn of the new millennium, JavaScript underwent a renaissance
+        as the internet entered the era of Web 2.0. The rise of Asynchronous
+        JavaScript and XML (AJAX) allowed for seamless data exchange between the
+        client and server without requiring a page refresh. This innovation
+        fueled the development of dynamic, interactive web applications,
+        revolutionizing the user experience. Platforms like Gmail and Google
+        Maps showcased JavaScript's potential in creating sophisticated,
+        desktop-like interfaces within the confines of a web browser. This
+        period solidified JavaScript as a fundamental tool for front-end
+        developers, and frameworks like jQuery emerged to simplify and
+        standardize the code, making it more accessible to a broader audience.
+      </p>
+      <h2>Conclusion</h2>
+      <p>
+        JavaScript's journey from a humble scripting language in the 1990s to a
+        full-stack powerhouse today is a testament to its adaptability and the
+        vibrant developer community supporting its evolution. As we continue to
+        witness technological advancements, JavaScript remains at the forefront,
+        driving innovation and shaping the way we interact with the digital
+        world. The history of JavaScript not only showcases its impressive
+        growth but also underscores its continued relevance in an ever-evolving
+        landscape of web development.
+      </p>
     </main>
   );
 }
